@@ -9,7 +9,7 @@ i18n
   .init({
     resources,
     lng: 'es',
-    keySeparator: true,
+    keySeparator: '.',
     interpolation: {
       escapeValue: false
     }
