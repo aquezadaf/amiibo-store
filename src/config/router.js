@@ -1,6 +1,6 @@
 import React from 'react';
 import { BrowserRouter, Switch, Route } from 'react-router-dom';
-import NavigationBar from '../components/NavigationBar/NavigationBar'
+import NavigationBar from '../components/NavigationBar'
 import App from '../App';
 
 export default () => (
