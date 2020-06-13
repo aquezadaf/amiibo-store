@@ -4,7 +4,7 @@ import { useTranslation } from 'react-i18next';
 import logo from './img/logo.svg';
 import styles from './NavigationBar.module.css';
 
-function NavigationBar() {
+export default function NavigationBar() {
   const { t } = useTranslation();
   return (
     <nav className={styles.container}>
@@ -21,5 +21,3 @@ function NavigationBar() {
     </nav>
   );
 }
-
-export default NavigationBar;

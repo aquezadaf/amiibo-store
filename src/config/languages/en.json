@@ -1,0 +1,10 @@
+{
+    "translation": {
+        "navigationBar": {
+            "cart": "Cart"
+        },
+        "product": {
+            "addToCart": "Add to cart"
+        }
+    }
+}
