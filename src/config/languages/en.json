@@ -5,6 +5,9 @@
         },
         "product": {
             "addToCart": "Add to cart"
+        },
+        "productGrid": {
+            "title": "Available Amiibos"
         }
     }
 }
