@@ -17,7 +17,7 @@ export default (state = initialState, action) => {
             return { ...state, amiibos: response, isLoading: false, error: undefined };
         case fetch.failure:
             const { error } = action;
-            return { ...state, isLoding: false, error };
+            return { ...state, isLoading: false, error };
         default:
             return state;
     }
