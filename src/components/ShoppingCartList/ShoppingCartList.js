@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import PropTypes from 'prop-types'
 import { useTranslation } from 'react-i18next';
 import styles from './ShoppingCartList.module.css';
@@ -29,7 +30,7 @@ function ShoppingCartList(props) {
                     <span className={styles.total}>{t('shoppingCart.total')}</span>
                     <span className={styles.total}>$ {products.reduce((total, { quantity, price }) => total + (quantity * price), 0)}</span>
                 </div>
-                <a href="#" className={styles.button}>{t('shoppingCart.checkout')}</a>
+                <Link to="/checkout" className={styles.button}>{t('shoppingCart.checkout')}</Link>
             </div>
         </div>
     );

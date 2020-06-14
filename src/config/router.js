@@ -11,7 +11,7 @@ export default () => (
           <Route exact path="/">
             <ProductScreenContainer />
           </Route>
-          <Route path="/cart">
+          <Route path="/checkout">
             <ProductScreenContainer />
           </Route>
           <Route path="*">
