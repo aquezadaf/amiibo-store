@@ -17,6 +17,10 @@
             "add": "+",
             "subtract": "-",
             "total": "Total"
+        },
+        "checkoutList": {
+            "title": "Checkout",
+            "total": "Total"
         }
     }
 }
