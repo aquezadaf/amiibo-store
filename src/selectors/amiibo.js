@@ -8,3 +8,5 @@ const selectFirst20Amiibos = createSelector(
 );
 
 export const amiibosSelector = selectFirst20Amiibos;
+export const isLoadingSelector = state => state.amiibo.isLoading;
+export const errorSelector = state => state.amiibo.error;

@@ -4,13 +4,14 @@ import PropTypes from 'prop-types'
 // import styles from './ProductGrid.module.css'
 // import ProductCard from '../../components/ProductCard'
 import ProductGrid from '../../components/ProductGrid'
+import Spinner from '../../components/Spinner'
 
 export default class ProductsScreen extends Component {
     static propTypes = {
         retrieveProducts: PropTypes.func.isRequired,
         products: PropTypes.array.isRequired,
-        // isLoading: PropTypes.bool.isRequired,
-        // error: PropTypes.string
+        isLoading: PropTypes.bool.isRequired,
+        error: PropTypes.string
     }
 
     componentDidMount() {
@@ -18,7 +19,10 @@ export default class ProductsScreen extends Component {
     }
 
     render() {
-        const { products } = this.props
+        const { products, isLoading } = this.props
+        if (isLoading) {
+            return <Spinner />
+        }
         return (
             <ProductGrid products={products} />
         )
