@@ -1,27 +1,27 @@
 {
-    "translation": {
-        "loading": "Loading",
-        "genericError": "There was an error retrieving the data, please try again",
-        "retry": "Retry",
-        "navigationBar": {
-            "cart": "Cart"
-        },
-        "product": {
-            "addToCart": "Add to cart"
-        },
-        "productGrid": {
-            "title": "Available Amiibos"
-        },
-        "shoppingCart": {
-            "checkout": "Checkout",
-            "add": "+",
-            "subtract": "-",
-            "total": "Total"
-        },
-        "checkout": {
-            "title": "Checkout",
-            "total": "Total",
-            "empty": "There no elements in the shopping cart"
-        }
+  "translation": {
+    "loading": "Loading",
+    "genericError": "There was an error retrieving the data, please try again",
+    "retry": "Retry",
+    "navigationBar": {
+      "cart": "Cart"
+    },
+    "product": {
+      "addToCart": "Add to cart"
+    },
+    "productGrid": {
+      "title": "Available Amiibos"
+    },
+    "shoppingCart": {
+      "checkout": "Checkout",
+      "add": "+",
+      "subtract": "-",
+      "total": "Total"
+    },
+    "checkout": {
+      "title": "Checkout",
+      "total": "Total",
+      "empty": "There no elements in the shopping cart"
     }
+  }
 }

@@ -1,8 +1,8 @@
-import React from 'react';
-import { Link } from 'react-router-dom';
-import logo from './img/logo.svg';
-import styles from './NavigationBar.module.css';
-import ShoppingCart from '../../containers/ShoppingCart'
+import React from "react";
+import { Link } from "react-router-dom";
+import logo from "./img/logo.svg";
+import styles from "./NavigationBar.module.css";
+import ShoppingCart from "../../containers/ShoppingCart";
 
 export default function NavigationBar() {
   return (

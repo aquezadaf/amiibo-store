@@ -1,3 +1,3 @@
-import amiibo from './amibo'
+import amiibo from "./amibo";
 
-export default { amiibo }
+export default { amiibo };

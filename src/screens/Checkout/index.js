@@ -1,3 +1,3 @@
-import CheckoutScreen from './CheckoutScreen';
+import CheckoutScreen from "./CheckoutScreen";
 
 export default CheckoutScreen;

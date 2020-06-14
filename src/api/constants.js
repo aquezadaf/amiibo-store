@@ -1,3 +1,3 @@
 export default {
-    amiiboAPI: 'https://www.amiiboapi.com/api/'
-}
+  amiiboAPI: "https://www.amiiboapi.com/api/",
+};

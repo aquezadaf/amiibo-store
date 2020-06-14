@@ -1,3 +1,3 @@
-import CheckoutList from './CheckoutList'
+import CheckoutList from "./CheckoutList";
 
-export default CheckoutList
+export default CheckoutList;

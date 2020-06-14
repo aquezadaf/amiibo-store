@@ -1,3 +1,3 @@
-import Retry from './Retry';
+import Retry from "./Retry";
 
 export default Retry;
