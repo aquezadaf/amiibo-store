@@ -13,7 +13,7 @@ const validateResponse = (response) => {
   if (response.amiibo) {
     return response.amiibo;
   }
-  return Promise.reject({ error: "Response in not supported format" });
+  return Promise.reject({ error: "Response not in supported format" });
 };
 
 export default {
