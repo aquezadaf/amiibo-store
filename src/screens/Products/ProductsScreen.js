@@ -3,6 +3,7 @@ import PropTypes from 'prop-types';
 import ProductGrid from '../../components/ProductGrid';
 import Spinner from '../../components/Spinner';
 import Retry from '../../components/Retry';
+import styles from './ProductsScreen.module.css'
 
 export default class ProductsScreen extends Component {
     static propTypes = {
@@ -16,7 +17,7 @@ export default class ProductsScreen extends Component {
         this.props.retrieveProducts()
     }
 
-    render() {
+    renderScreen() {
         const { products, isLoading, error, retrieveProducts } = this.props
         if (isLoading) {
             return <Spinner />
@@ -27,5 +28,13 @@ export default class ProductsScreen extends Component {
         return (
             <ProductGrid products={products} />
         )
+    }
+
+    render() {
+        return (
+            <div className={styles.container}>
+                {this.renderScreen()}
+            </div>
+        );
     }
 }
