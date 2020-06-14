@@ -21,7 +21,7 @@
     "checkout": {
       "title": "Checkout",
       "total": "Total",
-      "empty": "There no elements in the shopping cart"
+      "empty": "There are no elements in the shopping cart"
     }
   }
 }
