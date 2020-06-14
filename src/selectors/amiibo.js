@@ -1,7 +1,8 @@
 import { createSelector } from 'reselect';
 
+const fixedPricesRanges = [19990, 29990, 39990]
+
 const inferPriceFromName = (name) => {
-    const fixedPricesRanges = [19990, 29990, 39990]
     const range = Math.floor(name.length / 10)
     if (range < 3) {
         return fixedPricesRanges[range]
