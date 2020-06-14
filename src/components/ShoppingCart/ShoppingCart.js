@@ -14,7 +14,10 @@ export default class ShoppingCart extends Component {
     }
 
     handleShoppingCartClick = () => {
-        this.setState({ showShoppingCartList: !this.state.showShoppingCartList })
+        if (!this.props.count) {
+            return this.setState({ showShoppingCartList: false })
+        }
+        return this.setState({ showShoppingCartList: !this.state.showShoppingCartList })
     }
 
     render() {
