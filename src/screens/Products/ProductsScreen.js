@@ -1,10 +1,8 @@
-import React, { Component } from 'react'
-import PropTypes from 'prop-types'
-// import { useTranslation } from 'react-i18next';
-// import styles from './ProductGrid.module.css'
-// import ProductCard from '../../components/ProductCard'
-import ProductGrid from '../../components/ProductGrid'
-import Spinner from '../../components/Spinner'
+import React, { Component } from 'react';
+import PropTypes from 'prop-types';
+import ProductGrid from '../../components/ProductGrid';
+import Spinner from '../../components/Spinner';
+import Retry from '../../components/Retry';
 
 export default class ProductsScreen extends Component {
     static propTypes = {
@@ -19,9 +17,12 @@ export default class ProductsScreen extends Component {
     }
 
     render() {
-        const { products, isLoading } = this.props
+        const { products, isLoading, error, retrieveProducts } = this.props
         if (isLoading) {
             return <Spinner />
+        }
+        if (error) {
+            return <Retry onPress={retrieveProducts} />
         }
         return (
             <ProductGrid products={products} />

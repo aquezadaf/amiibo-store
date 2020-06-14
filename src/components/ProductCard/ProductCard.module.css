@@ -47,8 +47,9 @@
 .button {
     width: 152px;
     font-size: 15px;
+    color: #fff;
     border: 2px solid #fff;
-    background-color: #00b7ff;
+    background-color: #0382b4;
     text-align: center;
     text-transform: uppercase;
     font-weight: 700;

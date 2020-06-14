@@ -1,5 +1,8 @@
 {
     "translation": {
+        "loading": "Loading",
+        "genericError": "There was an error retrieving the data, please try again",
+        "retry": "Retry",
         "navigationBar": {
             "cart": "Cart"
         },
