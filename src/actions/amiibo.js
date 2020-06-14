@@ -12,7 +12,7 @@ const startAmiibosRequest = () => ({ type: actions.fetch.start })
 
 const handleAmiibosSuccessRequest = (amiibos) => ({
     type: actions.fetch.success,
-    amiibos
+    response: amiibos
 })
 
 const handleAmiibosFailureRequest = (error) => ({
