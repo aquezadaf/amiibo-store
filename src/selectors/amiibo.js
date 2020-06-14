@@ -2,4 +2,9 @@ import { createSelector } from 'reselect';
 
 const selectAllAmiibos = state => state.amiibo.amiibos;
 
-export const amiibosSelector = createSelector(selectAllAmiibos);
+const selectFirst20Amiibos = createSelector(
+    selectAllAmiibos,
+    (amiibos) => amiibos.slice(0, 19)
+);
+
+export const amiibosSelector = selectFirst20Amiibos;

@@ -21,9 +21,8 @@ const handleAmiibosFailureRequest = (error) => ({
 })
 
 export const getAllAmiibosThunk = () => (dispatch) => {
-    console.log('call', dispatch)
     dispatch(startAmiibosRequest())
     return api.amiibo.getAmiibos()
-        .then(handleAmiibosSuccessRequest)
-        .catch(handleAmiibosFailureRequest)
+        .then(amiibos => dispatch(handleAmiibosSuccessRequest(amiibos)))
+        .catch(error => dispatch(handleAmiibosFailureRequest(error)))
 }

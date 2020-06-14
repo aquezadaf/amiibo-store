@@ -1,3 +1,3 @@
-import amiibo from './amiibo'
+import * as amiibo from './amiibo'
 
 export default { amiibo }
