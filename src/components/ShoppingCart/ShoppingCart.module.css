@@ -1,11 +1,11 @@
 .container {
-    cursor: pointer;
     display: flex;
     justify-content: space-between;
 }
 
 .text {
     color: #777777;
+    cursor: pointer;
 }
 
 .text:hover {
@@ -24,4 +24,5 @@
     vertical-align: middle;
     white-space: nowrap;
     margin-left: 5px;
+    cursor: pointer;
 }

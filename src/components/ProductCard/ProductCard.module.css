@@ -59,3 +59,7 @@
     font-weight: 700;
     padding: 8px 0;
 }
+
+.button:hover {
+    background: #029bd8;
+}

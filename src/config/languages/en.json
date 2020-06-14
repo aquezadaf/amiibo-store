@@ -11,6 +11,11 @@
         },
         "productGrid": {
             "title": "Available Amiibos"
+        },
+        "shoppingCart": {
+            "checkout": "Checkout",
+            "add": "+",
+            "subtract": "-"
         }
     }
 }
