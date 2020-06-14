@@ -14,7 +14,10 @@ export default class ProductsScreen extends Component {
     }
 
     componentDidMount() {
-        this.props.retrieveProducts()
+        const { products, retrieveProducts } = this.props
+        if (!products.length) {
+            retrieveProducts()
+        }
     }
 
     renderScreen() {
