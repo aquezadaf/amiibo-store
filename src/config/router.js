@@ -1,32 +1,24 @@
-import React from 'react';
-import { BrowserRouter, Switch, Route, Link } from 'react-router-dom';
-import App from '../App';
+import React from "react";
+import { BrowserRouter, Switch, Route } from "react-router-dom";
+import NavigationBar from "../components/NavigationBar";
+import ProductScreenContainer from "../containers/ProductScreenContainer";
+import CheckoutScreenContainer from "../containers/CheckoutScreenContainer";
 
 export default () => (
-    <BrowserRouter>
-      <div>
-        <ul>
-          <li>
-            <Link to="/">Home</Link>
-          </li>
-          <li>
-            <Link to="/cart">Cart</Link>
-          </li>
-        </ul>
-
-        <hr />
-
-        <Switch>
-          <Route exact path="/">
-            <App />
-          </Route>
-          <Route path="/cart">
-            <App />
-          </Route>
-          <Route path="*">
-            <App />
-          </Route>
-        </Switch>
-      </div>
-    </BrowserRouter>
+  <BrowserRouter>
+    <div>
+      <NavigationBar />
+      <Switch>
+        <Route exact path="/">
+          <ProductScreenContainer />
+        </Route>
+        <Route path="/checkout">
+          <CheckoutScreenContainer />
+        </Route>
+        <Route path="*">
+          <ProductScreenContainer />
+        </Route>
+      </Switch>
+    </div>
+  </BrowserRouter>
 );

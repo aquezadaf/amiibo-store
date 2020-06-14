@@ -1,0 +1,15 @@
+.container {
+  margin: 10px;
+}
+
+.title {
+  margin-left: 10px;
+  font-size: 30px;
+  font-weight: bold;
+  text-align: left;
+}
+
+.products {
+  display: flex;
+  flex-wrap: wrap;
+}

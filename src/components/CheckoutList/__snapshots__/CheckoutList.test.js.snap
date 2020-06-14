@@ -1,0 +1,3 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders all products 1`] = `"<div class=\\"container\\"><div class=\\"title\\">checkout.title</div><div class=\\"products\\"><div><div class=\\"product\\"><img class=\\"image\\" src=\\"http://01\\" alt=\\"amiibo\\"/><div><div class=\\"name\\">First Amiibo</div><div class=\\"price\\">$ 10000 x 1</div></div></div></div><div><div class=\\"product\\"><img class=\\"image\\" src=\\"http://02\\" alt=\\"amiibo\\"/><div><div class=\\"name\\">Second Amiibo</div><div class=\\"price\\">$ 20000 x 2</div></div></div></div><div class=\\"totalContainer\\"><span class=\\"total\\">checkout.total</span><span class=\\"total\\">$50000</span></div></div></div>"`;

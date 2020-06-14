@@ -1,0 +1,3 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders spinner 1`] = `"<div class=\\"loader\\"><img src=\\"spinner.svg\\" alt=\\"spinner\\"/><div class=\\"text\\">loading</div></div>"`;
