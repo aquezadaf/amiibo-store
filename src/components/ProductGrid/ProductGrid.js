@@ -2,7 +2,7 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import { useTranslation } from 'react-i18next';
 import styles from './ProductGrid.module.css'
-import ProductCard from '../ProductCard'
+import ProductCard from '../../containers/ProductCard'
 
 function ProductGrid(props) {
     const { products } = props

@@ -1,7 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types'
 import { useTranslation } from 'react-i18next';
-import ShoppingCartList from '../ShoppingCartList';
+import ShoppingCartList from '../../containers/ShoppingCartList';
 import styles from './ShoppingCart.module.css';
 
 function ShoppingCart(props) {
