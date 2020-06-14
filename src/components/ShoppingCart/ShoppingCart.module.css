@@ -1,5 +1,7 @@
 .container {
     cursor: pointer;
+    display: flex;
+    justify-content: space-between;
 }
 
 .text {
@@ -21,4 +23,5 @@
     text-align: center;
     vertical-align: middle;
     white-space: nowrap;
+    margin-left: 5px;
 }
