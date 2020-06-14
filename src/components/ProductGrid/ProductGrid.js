@@ -19,7 +19,8 @@ function ProductGrid(props) {
 
 ProductGrid.propTypes = {
     products: PropTypes.arrayOf(PropTypes.shape({
-        picture: PropTypes.string.isRequired,
+        id: PropTypes.string.isRequired,
+        image: PropTypes.string.isRequired,
         name: PropTypes.string.isRequired,
         type: PropTypes.string.isRequired,
         price: PropTypes.number.isRequired
