@@ -2,17 +2,16 @@
 // allows you to do things like:
 // expect(element).toHaveTextContent(/react/i)
 // learn more: https://github.com/testing-library/jest-dom
-import React from 'react'
+import React from "react";
 import "@testing-library/jest-dom/extend-expect";
 import { enableFetchMocks } from "jest-fetch-mock";
-import { configure } from 'enzyme';
-import Adapter from 'enzyme-adapter-react-16';
+import { configure } from "enzyme";
+import Adapter from "enzyme-adapter-react-16";
 
-jest.mock('react-i18next', () => ({
-    useTranslation: () => ({ t: (key) => key}),
-    Translation: () => (key) => (<div>{key}</div>)
+jest.mock("react-i18next", () => ({
+  useTranslation: () => ({ t: (key) => key }),
+  Translation: () => (key) => <div>{key}</div>,
 }));
 
-enableFetchMocks()
+enableFetchMocks();
 configure({ adapter: new Adapter() });
-
