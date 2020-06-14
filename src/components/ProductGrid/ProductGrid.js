@@ -11,7 +11,7 @@ function ProductGrid(props) {
         <div className={styles.container}>
             <div className={styles.title}>{t('productGrid.title')}</div>
             <div className={styles.products}>
-                {products.map(product => <ProductCard {...product} />)}
+                {products.map(product => <ProductCard key={product.id} {...product} />)}
             </div>
         </div>
     )
