@@ -15,7 +15,8 @@
         "shoppingCart": {
             "checkout": "Checkout",
             "add": "+",
-            "subtract": "-"
+            "subtract": "-",
+            "total": "Total"
         }
     }
 }

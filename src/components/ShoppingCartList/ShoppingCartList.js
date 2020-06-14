@@ -25,6 +25,10 @@ function ShoppingCartList(props) {
                         </span>
                     </div>
                 ))}
+                <div className={styles.totalContainer}>
+                    <span className={styles.total}>{t('shoppingCart.total')}</span>
+                    <span className={styles.total}>$ {products.reduce((total, { quantity, price }) => total + (quantity * price), 0)}</span>
+                </div>
                 <a href="#" className={styles.button}>{t('shoppingCart.checkout')}</a>
             </div>
         </div>
@@ -43,6 +47,3 @@ ShoppingCartList.propTypes = {
 }
 
 export default ShoppingCartList
-
-
-
