@@ -18,9 +18,10 @@
             "subtract": "-",
             "total": "Total"
         },
-        "checkoutList": {
+        "checkout": {
             "title": "Checkout",
-            "total": "Total"
+            "total": "Total",
+            "empty": "There no elements in the shopping cart"
         }
     }
 }

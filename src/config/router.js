@@ -2,7 +2,7 @@ import React from 'react';
 import { BrowserRouter, Switch, Route } from 'react-router-dom';
 import NavigationBar from '../components/NavigationBar'
 import ProductScreenContainer from '../containers/ProductScreenContainer';
-import CheckoutScreen from '../screens/Checkout';
+import CheckoutScreenContainer from '../containers/CheckoutScreenContainer';
 
 export default () => (
     <BrowserRouter>
@@ -13,7 +13,7 @@ export default () => (
             <ProductScreenContainer />
           </Route>
           <Route path="/checkout">
-            <CheckoutScreen />
+            <CheckoutScreenContainer />
           </Route>
           <Route path="*">
             <ProductScreenContainer />

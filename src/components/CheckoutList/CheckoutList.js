@@ -8,7 +8,7 @@ function CheckoutList(props) {
     const { t } = useTranslation()
     return (
         <div className={styles.container}>
-            <div className={styles.title}>{t('checkoutList.title')}</div>
+            <div className={styles.title}>{t('checkout.title')}</div>
             <div className={styles.products}>
                 {products.map(product => <div key={product.id}>
                     <div className={styles.product}>
@@ -20,7 +20,7 @@ function CheckoutList(props) {
                     </div>
                 </div>)}
                 <div className={styles.totalContainer}>
-                    <span className={styles.total}>{t('checkoutList.total')}</span>
+                    <span className={styles.total}>{t('checkout.total')}</span>
                     <span className={styles.total}>${products.reduce((total, { quantity, price }) => total + (quantity * price), 0)}</span>
                 </div>
             </div>
