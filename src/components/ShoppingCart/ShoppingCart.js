@@ -26,7 +26,7 @@ export default class ShoppingCart extends Component {
                     <span className={styles.text}>
                         <Translation>{(t) => t('navigationBar.cart')}</Translation>
                     </span>
-                    {count && <span className={styles.badge}>{count}</span>}
+                    {!!count && <span className={styles.badge}>{count}</span>}
                 </div>
                 {showShoppingCartList && <ShoppingCartList />}
             </div>
